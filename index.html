@@ -7,7 +7,7 @@
 </head>
 <style>
     body{
-        background-image: url(/60c6e288837656280f67.jpg);
+        background-color: rgb(243,236,230);
     }
     button{
         position: fixed;
@@ -17,9 +17,28 @@
         cursor: pointer;
         padding: 16px 16px;
         width: 25%;
+        z-index: 5;
+    }
+    img{
+        animation: Xoay 2s infinite linear;
+        width: 32%;
+        border-radius: 100px;
+    } 
+    @keyframes Xoay {
+        from{
+            transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
     }
 </style>
 <body>
-        <button onclick="alert('Ngu Dai Vo Tri')">Click me</button>
+        <div class="img-contain">
+            <img src="/60c6e288837656280f67.jpg" alt="">
+            <img src="/60c6e288837656280f67.jpg" alt="">
+            <img src="/60c6e288837656280f67.jpg" alt="">
+        </div>
+        <button onclick="alert('Ngu Dai Vo Tri Xin Chao')">Click me</button>
 </body>
 </html>
